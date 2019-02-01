@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.100.25</domain>
+        <!--<domain includeSubdomains="true">localhost</domain>&lt;!&ndash; Jum 01-02-19 185004: I/retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall@ea8e389: Failed to connect to localhost/127.0.0.1:80 &ndash;&gt;-->
+        <!--<domain includeSubdomains="true">10.0.2.2</domain>-->
+    </domain-config>
+</network-security-config>
+    <!-- Kam 31-01-19 204741: todo android 8 Cleartext Traffic -->
+    <!-- Kam 31-01-19 205305: todo then add android:networkSecurityConfig="@xml/network_security_config" to manifest -->
